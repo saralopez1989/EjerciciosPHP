@@ -7,21 +7,13 @@
 <?php
     header ("Content-type: text/html;charset=\"utf-8\"");
 
-    if (is_numeric($_GET['numero']) && $_GET['numero'] >1)
+    if (is_numeric($_GET['numero']) && $_GET['numero'] >1 && primo($_GET['numero']))
     {
-        echo "<h3>".$_GET['numero'].Es un valor numérico"</h3>";
+        echo "<h3>".$_GET['numero'].Es un número primo"</h3>";
     }
     else
     {
-        echo "<h3>"no es un valor numérico."</h3>";
-    }
-
-    for ($i>1; $i<=$_GET['numero']; $i++) {
-        if (primo($_GET)) {
-            echo "<br>El número ".$i." es primo";
-        } else {
-            echo "<br>El número ".$i." NO es primo";
-        }
+        echo "<h3>"EL número no es primo."</h3>";
     }
 
 function primo($_GET)
@@ -47,7 +39,7 @@ function primo($_GET)
 ?>
 
 <form>
-    Escribe un numero entre 1 y 100:
+    Escribe un número:
     <input name="número" type="text" placeholder="Escribe número">
     <input type="submit" value="Comprobar">
 </form>
