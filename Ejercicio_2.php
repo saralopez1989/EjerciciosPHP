@@ -25,12 +25,12 @@
 
     $numero = 50;
     $calculo = $numero / 2 + 6;
-    echo "El resultado de la operación es : $calculo";
+    echo "El resultado de la operación es: $calculo";
 
     $logico = true;
     $logico2 = false;
 
-    echo "<p>El contenido de una variable tipo booleana verdadero: $logico y variable booleana falsa: $logico2</p>"
+    echo "<p>El contenido de una variable tipo booleana verdadero: $logico y variable booleana falsa: $logico2</p>";
 
     $variableNombreClase = "NombreClase";
     echo "<p>Este es un nombre de variable extraido de una cadena ".$$variableNombreClase>"</p>";
