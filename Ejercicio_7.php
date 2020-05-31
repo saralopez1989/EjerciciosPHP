@@ -29,11 +29,11 @@ header ("Content-type: text/html;charset=\"utf-8\"");
     function primo($numero)
     $num=$_GET['numero'];
     {
-    if ($num == 2 || $num == 3 || $num == 5 || $num == 7) {
+    if $num == 2 || $num == 3 || $num == 5 || $num == 7) {
         return True;
     } else {
         if ($num % 2 != 0) {
-            for ($i = 3; $i <= sqrt($num); $i += 2) {
+            for ($i = 3; $i <= $num; $i += 2) {
                 if ($num % $i == 0) {
                     return False;
                 }
