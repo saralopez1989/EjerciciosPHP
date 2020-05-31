@@ -9,30 +9,14 @@ header ("Content-type: text/html;charset=\"utf-8\"");
 
 for ($i=1; $i<= $_GET[]; $i++) {
 
-    if (is_numeric($_GET['numero']) && $_GET['numero'] >1 && primo($i))
+    if (is_numeric($_GET['numero']) && $_GET['numero'] >1)
     {
-        echo "<br>El número ".$i." es primo";
+        echo "<br>El número ".$i." es numerico";
     }
     else
     {
-        echo "<br>El número ".$i." NO es primo";
+        echo "<br>El número ".$i." NO es numerico";
     }
-
-function primo($num)
-{
-    if ($num == 2 || $num == 3 || $num == 5 || $num == 7) {
-        return True;
-    } else {
-        if ($num % 2 != 0) {
-            for ($i = 3; $i <= sqrt($num); $i += 2) {
-                if ($num % $i == 0) {
-                    return False;
-                }
-            }
-            return True;
-        }
-    }
-    return False;
 }
 ?>
 <form>
