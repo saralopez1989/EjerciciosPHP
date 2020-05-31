@@ -27,6 +27,7 @@ header ("Content-type: text/html;charset=\"utf-8\"");
     }
 
     function primo($numero)
+    $numero=$_GET['numero'];
     {
     if $numero == 2 || $numero == 3 || $numero == 5 || $numero == 7) {
         return True;
