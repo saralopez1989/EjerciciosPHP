@@ -12,7 +12,8 @@
         Este es 
         Un comentario de multiples
         Lineas
-    /*
+    */
+
     $NombreClase = "Lenguaje 4";
 
     echo "<html><head><meta charset=\"utf-8\"></head>";
