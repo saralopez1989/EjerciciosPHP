@@ -18,11 +18,11 @@ header ("Content-type: text/html;charset=\"utf-8\"");
 
     if ($_GET['numero']  % 2 != 0) 
         {
-            for ($i = 3; $i <= $_GET['numero'] ; $i += 2) 
+            for ($i = 1; $i <= $_GET['numero'] ; $i += 2) 
             {
                 if ($_GET['numero']  % $i == 0) 
                 {
-                    echo "<br>El número ".$_GET['numero']." es primo";
+                    echo "<h2>El número ".$_GET['numero']." es primo</h2>";
                 }
             }
         }
