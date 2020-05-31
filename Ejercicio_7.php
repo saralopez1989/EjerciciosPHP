@@ -8,31 +8,14 @@
 header ("Content-type: text/html;charset=\"utf-8\"");
 
 
-    if (is_numeric($_GET['numero']) && $_GET['numero'] >1)
+    if (is_numeric($num) && $num >1)
     {
-        echo "<br>El número ".$_GET['numero']." es numerico";
+        echo "<br>El número ".$num." es numerico";
     }
     else
     {
-        echo "<br>El número ".$_GET['numero']." NO es numerico";
+        echo "<br>El número ".$num." NO es numerico";
     }
-
-    
-    if ($_GET['numero'] == 2 || $_GET['numero']  == 3 || $_GET['numero']  == 5 || $_GET['numero']  == 7) {
-        echo "<br>El número ".$_GET['numero'] ." es primo";
-    } else {
-        if ($_GET['numero']  % 2 != 0) {
-            for ($i = 3; $i <= $_GET['numero'] ; $i += 2) {
-                if ($_GET['numero']  % $i == 0) {
-                    echo "<br>El número ".$_GET['numero']." NO es primo";
-                }
-            }
-            return True;
-        }
-    }
-    return False;
-}
-
 
 
 ?>
