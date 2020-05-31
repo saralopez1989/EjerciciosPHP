@@ -17,7 +17,7 @@ header ("Content-type: text/html;charset=\"utf-8\"");
         echo "<br>El número ".$$_GET['numero']." NO es numerico";
     }
 
-    if (primo($_GET['numero']) && $_GET['numero'] >1)
+    if (primo($numero) == true)
     {
         echo "<br>El número ".$_GET['numero']." es primo";
     }
@@ -26,14 +26,14 @@ header ("Content-type: text/html;charset=\"utf-8\"");
         echo "<br>El número ".$$_GET['numero']." NO es primo";
     }
 
-    function primo($_GET)
+    function primo($numero)
     {
-    if ($_GET['numero'] == 2 || $_GET['numero'] == 3 || $_GET['numero'] == 5 || $_GET['numero'] == 7) {
+    if $numero == 2 || $numero == 3 || $numero == 5 || $numero == 7) {
         return True;
     } else {
-        if ($_GET['numero'] % 2 != 0) {
-            for ($i = 3; $i <= sqrt($_GET['numero']); $i += 2) {
-                if ($_GET['numero'] % $i == 0) {
+        if ($numero % 2 != 0) {
+            for ($i = 3; $i <= sqrt($numero); $i += 2) {
+                if ($numero % $i == 0) {
                     return False;
                 }
             }
