@@ -5,29 +5,27 @@
 <h1>Ejercicio 7</h1>
 
 <?php
-    header ("Content-type: text/html;charset=\"utf-8\"");
+header ("Content-type: text/html;charset=\"utf-8\"");
 
-    if (is_numeric($_GET['numero']) && $_GET['numero'] >1 && primo($_GET['numero']))
+for ($i=1; $i<= $_GET[]; $i++) {
+
+    if (is_numeric($_GET['numero']) && $_GET['numero'] >1 && primo($i))
     {
-        echo "<h3>".$_GET['numero'].Es un número primo"</h3>";
+        echo "<br>El número ".$i." es primo";
     }
     else
     {
-        echo "<h3>"EL número no es primo."</h3>";
+        echo "<br>El número ".$i." NO es primo";
     }
 
-function primo($_GET)
+function primo($num)
 {
-    if ($_GET['numero'] == 2 || $_GET['numero'] == 3 || $_GET['numero'] == 5 || $_GET['numero'] == 7) 
-    {
+    if ($num == 2 || $num == 3 || $num == 5 || $num == 7) {
         return True;
     } else {
-        // comprobamos si es par
-        if ($_GET['numero'] % 2 != 0) 
-        {  // comprobamos solo por los impares
-            for ($i = 3; $i <= sqrt($_GET['numero']); $i += 2)
-             {
-                if ($_GET['numero'] % $i == 0) {
+        if ($num % 2 != 0) {
+            for ($i = 3; $i <= sqrt($num); $i += 2) {
+                if ($num % $i == 0) {
                     return False;
                 }
             }
@@ -37,10 +35,9 @@ function primo($_GET)
     return False;
 }
 ?>
-
 <form>
     Escribe un número:
-    <input name="número" type="text" placeholder="Escribe número">
+    <input name="numero" type="text" placeholder="Escribe número">
     <input type="submit" value="Comprobar">
 </form>
 
