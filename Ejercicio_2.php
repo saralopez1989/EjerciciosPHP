@@ -33,7 +33,7 @@
     echo "<p>El contenido de una variable tipo booleana verdadero: $logico y variable booleana falsa: $logico2</p>";
 
     $variableNombreClase = "NombreClase";
-    echo "<p>Este es un nombre de variable extraido de una cadena ".$$variableNombreClase>"</p>";
+    echo "<p>Este es un nombre de variable extraido de una cadena ".$$variableNombreClase."</p>";
 
 ?>
 
