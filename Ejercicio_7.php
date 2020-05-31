@@ -27,14 +27,14 @@ header ("Content-type: text/html;charset=\"utf-8\"");
     }
 
     function primo($numero)
-    $numero=$_GET['numero'];
+    $num=$_GET['numero'];
     {
-    if $numero == 2 || $numero == 3 || $numero == 5 || $numero == 7) {
+    if ($num == 2 || $num == 3 || $num == 5 || $num == 7) {
         return True;
     } else {
-        if ($numero % 2 != 0) {
-            for ($i = 3; $i <= sqrt($numero); $i += 2) {
-                if ($numero % $i == 0) {
+        if ($num % 2 != 0) {
+            for ($i = 3; $i <= sqrt($num); $i += 2) {
+                if ($num % $i == 0) {
                     return False;
                 }
             }
