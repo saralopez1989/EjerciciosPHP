@@ -21,7 +21,7 @@ header ("Content-type: text/html;charset=\"utf-8\"");
 ?>
 <form>
     Escribe un número:
-    <input name="numero" type="text" placeholder="Escribe número">
+    <input name="num" type="text" placeholder="Escribe número">
     <input type="submit" value="Comprobar">
 </form>
 
