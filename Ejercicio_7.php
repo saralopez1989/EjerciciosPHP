@@ -16,6 +16,35 @@ header ("Content-type: text/html;charset=\"utf-8\"");
     {
         echo "<br>El número ".$$_GET['numero']." NO es numerico";
     }
+
+    if (primo($_GET['numero']) && $_GET['numero'] >1)
+    {
+        echo "<br>El número ".$_GET['numero']." es primo";
+    }
+    else
+    {
+        echo "<br>El número ".$$_GET['numero']." NO es primo";
+    }
+
+    function primo($_GET['numero'])
+    {
+    if ($_GET['numero'] == 2 || $_GET['numero'] == 3 || $_GET['numero'] == 5 || $_GET['numero'] == 7) {
+        return True;
+    } else {
+        if ($_GET['numero'] % 2 != 0) {
+            for ($i = 3; $i <= sqrt($_GET['numero']); $i += 2) {
+                if ($_GET['numero'] % $i == 0) {
+                    return False;
+                }
+            }
+            return True;
+        }
+    }
+    return False;
+}
+
+
+
 ?>
 <form>
     Escribe un número:
