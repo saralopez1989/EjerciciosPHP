@@ -19,7 +19,7 @@
     echo "<html><head><meta charset=\"utf-8\"></head>";
     echo "<body>";
     echo "<h2>Esta es la clase de $NombreClase mañana y tarde (Símbolo) </h2>";
-    echo "<h2>Esta es otra fila de la clase de ".$NombreClase."con dos cadenas concatenadas </h2>";
+    echo "<h2>Esta es otra fila de la clase de ".$NombreClase." con dos cadenas concatenadas </h2>";
     echo "</body>";
     echo "</html>";
 
