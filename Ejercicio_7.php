@@ -18,7 +18,7 @@ header ("Content-type: text/html;charset=\"utf-8\"");
 
     if ($_GET['numero']  % 2 != 0) 
         {
-            for ($i = 1; $i <= $_GET['numero'] ; $i += 2) 
+            for ($i = 1; $i <= $_GET['numero'] ; $i++) 
             {
                 if ($_GET['numero']  % $i == 0) 
                 {
