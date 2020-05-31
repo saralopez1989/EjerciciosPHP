@@ -26,7 +26,7 @@ header ("Content-type: text/html;charset=\"utf-8\"");
         echo "<br>El número ".$$_GET['numero']." NO es primo";
     }
 
-    function primo($_GET['numero'])
+    function primo($_GET)
     {
     if ($_GET['numero'] == 2 || $_GET['numero'] == 3 || $_GET['numero'] == 5 || $_GET['numero'] == 7) {
         return True;
