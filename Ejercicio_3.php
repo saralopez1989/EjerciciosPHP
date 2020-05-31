@@ -31,7 +31,7 @@
     $miArregloReves = array_reverse($miArreglo);
 
     echo "<br><br>";
-    print_r ($miFechaReves); //Este nuevo arreglo contiene los elementos en forma inversa
+    print_r($miArregloReves); //Este nuevo arreglo contiene los elementos en forma inversa
 ?>
 
 </body>
