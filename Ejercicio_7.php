@@ -7,17 +7,15 @@
 <?php
 header ("Content-type: text/html;charset=\"utf-8\"");
 
-for ($i=1; $i<= $_GET[]; $i++) {
 
     if (is_numeric($_GET['numero']) && $_GET['numero'] >1)
     {
-        echo "<br>El número ".$i." es numerico";
+        echo "<br>El número ".$_GET['numero']." es numerico";
     }
     else
     {
-        echo "<br>El número ".$i." NO es numerico";
+        echo "<br>El número ".$$_GET['numero']." NO es numerico";
     }
-}
 ?>
 <form>
     Escribe un número:
