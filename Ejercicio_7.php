@@ -22,13 +22,13 @@ header ("Content-type: text/html;charset=\"utf-8\"");
             {
                 if ($_GET['numero']  % $i == 0) 
                 {
-                    echo "<br>El número ".$_GET['numero']." NO es primo";
+                    echo "<br>El número ".$_GET['numero']." es primo";
                 }
             }
         }
         else 
         {
-            echo "<h2>El número ".$_GET['numero']." es primo</h2>";
+            echo "<h2>El número ".$_GET['numero']." No es primo</h2>";
         }
     
 ?>
