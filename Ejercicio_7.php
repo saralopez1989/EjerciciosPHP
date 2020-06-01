@@ -16,7 +16,7 @@ header ("Content-type: text/html;charset=\"utf-8\"");
         echo "<h3>El valor ".$_GET['numero']." No es numerico</h3>";
     }
     
-
+    $i = 0;
     for ($i = 2; $i <= $_GET['numero'] / 2; $i++) 
     {
         if ($_GET['numero'] % $i == 0 || $_GET['numero'] < 2 ) 
