@@ -25,12 +25,21 @@ header ("Content-type: text/html;charset=\"utf-8\"");
                 continue;
             }
     
-            echo "<h2>El número ".$_GET['numero']." No es primo</h2>";;
+            return false;
         }
     
-        echo "<h2>El número ".$_GET['numero']." es primo</h2>";;
+        return true;
     }
-        
+        if(function($i)== true)
+        {
+            echo "<h2>El número ".$_GET['numero']." es primo</h2>";
+        }
+        }
+        else 
+        {
+            echo "<h2>El número ".$_GET['numero']." No es primo</h2>";
+        }
+    
 ?>
 <form>
     Escribe un número:
