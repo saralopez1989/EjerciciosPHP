@@ -16,20 +16,21 @@ header ("Content-type: text/html;charset=\"utf-8\"");
         echo "<h3>El valor ".$_GET['numero']." No es numerico</h3>";
     }
     
-    if ($_GET['numero']  % 2 != 0) 
+    if ($_GET['numero'] < 2)
+    {
+        echo "<h2>El número ".$_GET['numero']."No es primo</h2>";
+    }
+    for ($i = 2; $i <= $_GET['numero'] / 2; $i++) 
+    {
+        if ($_GET['numero'] % $i == 0) 
         {
-            for ($i = 1; $i <= $_GET['numero'] ; $i++) 
-            {
-                if ($_GET['numero']  % $i == 0) 
-                {
-                    echo "<h2>El número ".$_GET['numero']."No es primo</h2>";
-                }
-            }
+            echo "<h2>El número ".$_GET['numero']."No es primo</h2>";
         }
-        else 
-        {
+        else
+        }
             echo "<h2>El número ".$_GET['numero']." es primo</h2>";
         }
+    }
     
 ?>
 <form>
