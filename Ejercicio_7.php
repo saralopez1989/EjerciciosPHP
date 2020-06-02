@@ -9,6 +9,8 @@ header ("Content-type: text/html;charset=\"utf-8\"");
         
     if(is_numeric($_GET['numero']) && $_GET['numero'] >1)
     {
+        if(var_dump($_GET['numero']) == "int")
+        {
         $cont=0;
         for($i=1;$i<=$_GET['numero'];$i++)
         {  
@@ -21,6 +23,11 @@ header ("Content-type: text/html;charset=\"utf-8\"");
         else
         {
           echo "<h3>el numero ".$_GET['numero']." no es primo.</h3>";
+        }
+        }
+        else
+        {
+            echo "<h3>el numero ".$_GET['numero']." no es entero.</h3>";
         }
     }
     else
