@@ -7,26 +7,32 @@
 <?php
 header ("Content-type: text/html;charset=\"utf-8\"");
         
-    if(is_int(mixed $var) && is_numeric($_GET['numero']) && $_GET['numero'] >1)
+    if(is_numeric($_GET['numero']) && $_GET['numero'] >1)
     {
-        if()
-        $cont=0;
-        for($i=1;$i<=$_GET['numero'];$i++)
-        {  
-            if($_GET['numero']%$i==0)$cont++;
-        }
-        if($cont==2)
+        if(is_int($_GET['numero']))
         {
-            echo "<h3>el numero ".$_GET['numero']." es primo.</h3>";
+            $cont=0;
+            for($i=1;$i<=$_GET['numero'];$i++)
+            {  
+              if($_GET['numero']%$i==0)$cont++;
+            }
+            if($cont==2)
+            {
+                echo "<h3>el numero ".$_GET['numero']." es primo.</h3>";
+            }
+            else
+            {
+                echo "<h3>el numero ".$_GET['numero']." no es primo.</h3>";
+            }
         }
         else
         {
-            echo "<h3>el numero ".$_GET['numero']." no es primo.</h3>";
+            echo "<h3>El valor ".$_GET['numero']." No es un entero</h3>";
         }
     }
     else
     {
-        echo "<h3>El valor ".$_GET['numero']." No es numerico o no es un entero</h3>";
+        echo "<h3>El valor ".$_GET['numero']." No es numerico</h3>";
     }
     
 ?>
