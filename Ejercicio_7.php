@@ -9,7 +9,7 @@ header ("Content-type: text/html;charset=\"utf-8\"");
         
     if(is_numeric($_GET['numero']) && $_GET['numero'] >1)
     {
-        if(var_dump($_GET['numero']) = "int")
+        if(var_dump($_GET['numero']) =int)
         {
         $cont=0;
         for($i=1;$i<=$_GET['numero'];$i++)
