@@ -7,7 +7,7 @@
 <?php
 header ("Content-type: text/html;charset=\"utf-8\"");
         
-    if(is_integer($_GET['numero']) && is_numeric($_GET['numero']) && $_GET['numero'] >1 )
+    if(is_numeric($_GET['numero']) && is_int($_GET['numero']) && $_GET['numero'] >1)
     {
         $cont=0;
         for($i=1;$i<=$_GET['numero'];$i++)
