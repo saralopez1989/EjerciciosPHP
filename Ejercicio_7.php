@@ -7,8 +7,8 @@
 <?php
 header ("Content-type: text/html;charset=\"utf-8\"");
 
-    $_GET['numero'] = 2;
-    if(is_int($_GET['numero']) && is_numeric($_GET['numero']) && $_GET['numero'] >1)
+    
+    if(is_numeric($_GET['numero']) && $_GET['numero'] >1)
     {
         $cont=0;
         for($i=1;$i<=$_GET['numero'];$i++)
@@ -26,7 +26,7 @@ header ("Content-type: text/html;charset=\"utf-8\"");
     }
     else
     {
-        echo "<h3>El valor ".$_GET['numero']." No es numerico o no es un entero</h3>";
+        echo "<h3>El valor ".$_GET['numero']." No es numerico</h3>";
     }
     }
     
