@@ -28,7 +28,7 @@ header ("Content-type: text/html;charset=\"utf-8\"");
     {
         echo "<h3>El valor ".$_GET['numero']." No es numerico</h3>";
     }
-    }
+    
     
 ?>
 <form>
