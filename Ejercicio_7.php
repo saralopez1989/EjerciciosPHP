@@ -7,7 +7,7 @@
 <?php
 header ("Content-type: text/html;charset=\"utf-8\"");
      
-    int $_GET['numero'];
+    int ($_GET['numero']);
     if(is_numeric($_GET['numero']) && $_GET['numero'] >1)
     {
         $cont=0;
